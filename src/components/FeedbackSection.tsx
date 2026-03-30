@@ -88,31 +88,20 @@ export default function FeedbackSection() {
               variants={fadeUpItem}
               className="w-full flex h-full group"
             >
-              {/* Premium Card Treatment - card-soft with hover state scale */}
               <div 
-                className="relative w-full rounded-2xl overflow-hidden flex-1 self-stretch card-soft p-1.5 transition-all duration-700 hover:scale-[1.02]"
+                className="relative w-full rounded-[1.25rem] overflow-hidden flex-1 self-stretch transition-all duration-700 hover:scale-[1.02]"
                 style={{ 
                   aspectRatio: "3/4",
-                  border: "1px solid rgba(184,132,79,0.15)",
+                  boxShadow: "0 12px 32px -12px rgba(0,0,0,0.15)",
                 }}
               >
-                <div className="relative w-full h-full rounded-[calc(1rem-0.375rem)] overflow-hidden bg-white/60">
-                  <Image 
-                    src={item.src} 
-                    alt={item.alt} 
-                    fill 
-                    unoptimized
-                    className="object-cover object-top scale-[1.01] group-hover:scale-105 transition-transform duration-700 ease-out" 
-                  />
-                  {/* Subtle glass reflection overlay */}
-                  <div
-                    className="absolute inset-0 pointer-events-none"
-                    style={{
-                      background: "linear-gradient(to bottom right, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%)",
-                      mixBlendMode: "overlay"
-                    }}
-                  />
-                </div>
+                <Image 
+                  src={item.src} 
+                  alt={item.alt} 
+                  fill 
+                  unoptimized
+                  className="object-cover object-top scale-[1.01] group-hover:scale-105 transition-transform duration-700 ease-out" 
+                />
               </div>
             </motion.div>
           ))}
