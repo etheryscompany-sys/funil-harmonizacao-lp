@@ -26,10 +26,10 @@ const fadeUpItem = {
 
 export default function FeedbackSection() {
   const images = [
-    { src: "/image.png", alt: "Feedback de aluna 1" },
-    { src: "/image(1).png", alt: "Feedback de aluna 2" },
-    { src: "/image(2).png", alt: "Feedback de aluna 3" },
-    { src: "/image(3).png", alt: "Feedback de aluna 4" },
+    { src: "/feedbacks/1.png", alt: "Feedback de aluna 1" },
+    { src: "/feedbacks/2.png", alt: "Feedback de aluna 2" },
+    { src: "/feedbacks/3.png", alt: "Feedback de aluna 3" },
+    { src: "/feedbacks/4.png", alt: "Feedback de aluna 4" },
   ];
 
   return (
@@ -38,7 +38,7 @@ export default function FeedbackSection() {
       style={{
         paddingTop: "calc(var(--spacing-section) * 1.25)",
         paddingBottom: "var(--spacing-section)",
-        background: "var(--color-bg-primary)",
+        background: "var(--color-bg-surface)",
       }}
     >
       {/* Dual warm radial glows — taste-skill: tinted, not neon */}
@@ -92,7 +92,7 @@ export default function FeedbackSection() {
               <div 
                 className="relative w-full rounded-2xl overflow-hidden flex-1 self-stretch card-soft p-1.5 transition-all duration-700 hover:scale-[1.02]"
                 style={{ 
-                  aspectRatio: "9/16",
+                  aspectRatio: "3/4",
                   border: "1px solid rgba(184,132,79,0.15)",
                 }}
               >
@@ -102,7 +102,7 @@ export default function FeedbackSection() {
                     alt={item.alt} 
                     fill 
                     unoptimized
-                    className="object-contain object-center scale-[1.01] group-hover:scale-105 transition-transform duration-700 ease-out" 
+                    className="object-cover object-top scale-[1.01] group-hover:scale-105 transition-transform duration-700 ease-out" 
                   />
                   {/* Subtle glass reflection overlay */}
                   <div

@@ -5,11 +5,10 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 export default function CTABanner() {
   return (
     <section
-      className="w-full"
+      className="w-full relative z-20"
       style={{
         paddingTop: "var(--spacing-section-sm)",
         paddingBottom: "var(--spacing-section-sm)",
-        background: "var(--color-bg-surface)",
       }}
     >
       <div className="container-lp flex justify-center">
