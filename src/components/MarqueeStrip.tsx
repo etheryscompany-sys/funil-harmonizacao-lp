@@ -1,0 +1,79 @@
+"use client";
+
+const items = [
+  "ANÁLISE FACIAL",
+  "HARMONIZAÇÃO OROFACIAL",
+  "ALTO TICKET",
+  "HOF & ESTÉTICA",
+  "PROTOCOLO ESTRUTURADO",
+  "MÉTODO VALIDADO",
+];
+
+export default function MarqueeStrip() {
+  return (
+    <section
+      className="w-full overflow-hidden py-3 md:py-8 relative"
+      style={{
+        background: "var(--color-bg-contrast)",
+      }}
+    >
+      {/* Accent glow — subtle center warmth */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          opacity: 0.04,
+          background:
+            "radial-gradient(ellipse at 50% 50%, var(--color-accent) 0%, transparent 70%)",
+        }}
+      />
+
+      {/* Top border — thin accent gradient */}
+      <div
+        className="absolute top-0 left-0 right-0 h-px"
+        style={{
+          background:
+            "linear-gradient(90deg, transparent 10%, var(--color-accent-dark) 50%, transparent 90%)",
+          opacity: 0.25,
+        }}
+      />
+
+      {/* Bottom border — thin accent gradient */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-px"
+        style={{
+          background:
+            "linear-gradient(90deg, transparent 10%, var(--color-accent-dark) 50%, transparent 90%)",
+          opacity: 0.25,
+        }}
+      />
+
+      <div className="flex whitespace-nowrap animate-marquee">
+        {Array.from({ length: 4 }).map((_, rep) =>
+          items.map((item, i) => (
+            <span
+              key={`${rep}-${i}`}
+              className="shrink-0 flex items-center gap-8 md:gap-12 mx-4 md:mx-6"
+            >
+              <span
+                className="text-sm md:text-base tracking-[0.25em] uppercase font-medium"
+                style={{
+                  fontFamily: "var(--font-display)",
+                  color: "rgba(245, 240, 235, 0.35)",
+                }}
+              >
+                {item}
+              </span>
+              <span
+                className="inline-block w-1 h-1 rounded-full shrink-0"
+                style={{
+                  background: "var(--color-accent)",
+                  opacity: 0.5,
+                }}
+              />
+            </span>
+          ))
+        )}
+      </div>
+    </section>
+  );
+}
