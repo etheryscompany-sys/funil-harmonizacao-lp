@@ -10,7 +10,7 @@ const steps = [
     title: "Por que a paciente certa não chega até você",
     subtitle: "Mesmo você atendendo bem, investindo e fazendo conteúdo",
     description:
-      "Vamos identificar juntas o que está afastando as pacientes que realmente querem tratar de verdade — e atraindo só curiosas.",
+      "Vamos identificar juntas o que está afastando as pacientes que realmente querem tratar de verdade e atraindo só curiosas.",
   },
   {
     icon: CurrencyDollar,
@@ -26,7 +26,7 @@ const steps = [
     title: "O caminho mais seguro pro seu momento",
     subtitle: "Não é fórmula genérica, é o que faz sentido pra onde a sua clínica tá hoje",
     description:
-      "Você sai da sessão com um plano claro e personalizado do que precisa mudar primeiro — sem achismo, sem fórmula pronta.",
+      "Você sai da sessão com um plano claro e personalizado do que precisa mudar primeiro. Sem achismo, sem fórmula pronta.",
   },
 ];
 
@@ -78,7 +78,7 @@ export default function PromiseSection() {
                   className="text-base leading-relaxed max-w-[45ch] text-center lg:text-left mx-auto lg:mx-0"
                   style={{ color: "var(--color-text-secondary)" }}
                 >
-                  Uma sessão individual e gratuita comigo para diagnosticar o que tá travando a sua clínica — e sair com um plano claro do que mudar.
+                  Uma sessão individual e gratuita comigo para diagnosticar o que tá travando a sua clínica e sair com um plano claro do que mudar.
                 </p>
               </ScrollReveal>
             </div>

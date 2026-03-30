@@ -15,7 +15,7 @@ const benefits = [
   "Diagnóstico do que tá travando a sua clínica",
   "Clareza sobre por que a paciente certa não vem",
   "Plano claro do que mudar no seu caso específico",
-  "Sem fórmula genérica — cada clínica é diferente",
+  "Sem fórmula genérica, cada clínica é diferente",
   "100% gratuita e sem compromisso",
 ];
 

@@ -6,10 +6,10 @@ export default function PixelPageEvents() {
   useEffect(() => {
     if (window.fbq) {
       window.fbq("track", "ViewContent", {
-        content_name: "O Fim dos Curiosos — Aula ao Vivo",
-        content_category: "Evento Online",
+        content_name: "Anamnese Estratégica",
+        content_category: "Lead Magnet",
         currency: "BRL",
-        value: 97,
+        value: 0,
       });
     }
   }, []);

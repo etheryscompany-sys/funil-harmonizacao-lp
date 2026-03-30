@@ -108,7 +108,7 @@ export default function SpeakerSection() {
                 <div className="relative w-full aspect-[3/4] lg:aspect-[4/5]">
                   <Image
                     src="/kathyele-speaker-v2.webp"
-                    alt="Kathyele Joana — Mentora de Estética"
+                    alt="Kathyele Joana Mentora de Estética"
                     fill
                     className="object-cover object-top"
                     sizes="(max-width: 1024px) 85vw, 42vw"
@@ -192,7 +192,7 @@ export default function SpeakerSection() {
                 >
                   Já ajudei dezenas de profissionais que viviam no mesmo
                   ciclo, atendendo bem, investindo e mesmo assim só atraindo
-                  curiosa — a construir uma clínica com pacientes que querem
+                  curiosa, a construir uma clínica com pacientes que querem
                   tratar de verdade.
                 </p>
               </blockquote>

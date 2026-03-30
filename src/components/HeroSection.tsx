@@ -64,7 +64,7 @@ export default function HeroSection() {
         <div className="relative w-full aspect-[3/4] max-h-[55dvh]">
           <Image
             src="/kathyele-hero-v2.webp"
-            alt="Kathyele Joana — Mentora de Estética"
+            alt="Kathyele Joana Mentora de Estética"
             fill
             className="object-cover object-[center_15%]"
             sizes="(max-width: 1024px) 100vw, 0px"
@@ -92,7 +92,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left content — 7 cols */}
           <motion.div
-            className="lg:col-span-7 flex flex-col gap-5 md:gap-8 items-center text-center lg:items-start lg:text-left"
+            className="lg:col-span-12 flex flex-col gap-5 md:gap-8 items-center text-center mx-auto max-w-4xl"
             variants={stagger}
             initial="hidden"
             animate="visible"
@@ -100,13 +100,13 @@ export default function HeroSection() {
             {/* Top bar — hidden on mobile */}
             <motion.div variants={fadeUp} className="hidden sm:flex flex-row items-center gap-3">
               <span className="badge-mono-hero inline-block">
-                ANÁLISE GRATUITA
+                ANÁLISE ESTRATÉGICA
               </span>
               <span
                 className="font-mono text-[0.6875rem] tracking-[0.12em] uppercase"
                 style={{ color: "rgba(245, 240, 235, 0.5)" }}
               >
-                Sessão Individual | Gratuita
+                Sessão Individual
               </span>
             </motion.div>
 
@@ -135,7 +135,7 @@ export default function HeroSection() {
               style={{ color: "rgba(245, 240, 235, 0.85)" }}
               variants={fadeUp}
             >
-              Em uma sessão gratuita e individual comigo, vou identificar o que tá impedindo a sua clínica de atrair paciente que quer tratar de verdade e fechar protocolo completo.
+              Em uma sessão individual comigo, vou identificar o que tá impedindo a sua clínica de atrair paciente que quer tratar de verdade e fechar protocolo completo.
             </motion.h2>
 
             {/* Exclusive tag */}
@@ -150,7 +150,7 @@ export default function HeroSection() {
 
             {/* CTA */}
             <motion.div
-              className="flex flex-col items-center lg:items-start w-full sm:w-auto"
+              className="flex flex-col items-center w-full sm:w-auto"
               variants={fadeUp}
             >
               <a
@@ -167,38 +167,7 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Right visual — 5 cols */}
-          <motion.div
-            className="lg:col-span-5 relative hidden lg:flex items-center justify-center"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          >
-            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
-              <Image
-                src="/kathyele-hero-v2.webp"
-                alt="Kathyele Joana — Mentora de Estética"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 1024px) 0px, 42vw"
-                priority
-                loading="eager"
-              />
-              <div
-                className="absolute bottom-0 left-0 right-0 h-1/3 pointer-events-none"
-                style={{
-                  background: "linear-gradient(to top, var(--color-hero-bg) 0%, transparent 100%)",
-                }}
-              />
-              <div
-                className="absolute inset-0 rounded-2xl pointer-events-none"
-                style={{
-                  border: "1px solid rgba(255,255,255,0.04)",
-                  boxShadow: "inset 0 1px 0 rgba(255,255,255,0.06), inset 0 0 80px rgba(0,0,0,0.2)",
-                }}
-              />
-            </div>
-          </motion.div>
+          {/* Right visual removed to center content */}
         </div>
       </motion.div>
 

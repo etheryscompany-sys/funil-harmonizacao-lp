@@ -29,7 +29,7 @@ export default function Footer() {
             className="font-mono text-[0.6rem] tracking-[0.1em] uppercase"
             style={{ color: "var(--color-text-muted)" }}
           >
-            &copy; 2026 — Todos os direitos reservados
+            &copy; 2026 Todos os direitos reservados
           </p>
         </div>
       </div>

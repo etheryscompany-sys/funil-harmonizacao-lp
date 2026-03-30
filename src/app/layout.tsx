@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   other: {
     "facebook-domain-verification": "j8xlulyw4d75zcyukrxkozh13r4poe",
   },
-  title: "Anamnese Estratégica | Kathyele Joana — Harmonização Orofacial",
+  title: "Anamnese Estratégica | Kathyele Joana",
   description:
     "Sessão gratuita e individual para identificar o que está impedindo sua clínica de atrair a paciente certa e fechar protocolo completo.",
   openGraph: {
-    title: "Anamnese Estratégica | Kathyele Joana — Harmonização Orofacial",
+    title: "Anamnese Estratégica | Kathyele Joana",
     description:
       "Sessão gratuita e individual para identificar o que está impedindo sua clínica de atrair a paciente certa e fechar protocolo completo.",
     type: "website",

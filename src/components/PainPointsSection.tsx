@@ -25,13 +25,13 @@ const painPoints = [
     icon: ClockCountdown,
     title: "Investe em marketing e não vê retorno",
     description:
-      "Já gastou com tráfego, fez conteúdo, tentou de tudo. Mas o resultado não aparece porque o problema não é o marketing — é o posicionamento.",
+      "Já gastou com tráfego, fez conteúdo, tentou de tudo. Mas o resultado não aparece porque o problema não é o marketing, é o posicionamento.",
   },
   {
     icon: UserMinus,
     title: "Não sabe o que precisa mudar primeiro",
     description:
-      "São tantas variáveis — preço, conteúdo, atendimento, oferta — que você fica paralisada sem saber por onde começar. Cada caso é diferente.",
+      "São tantas variáveis (preço, conteúdo, atendimento, oferta) que você fica paralisada sem saber por onde começar. Cada caso é diferente.",
   },
 ];
 

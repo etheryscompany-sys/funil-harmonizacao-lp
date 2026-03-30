@@ -40,27 +40,17 @@ export default function StickyUrgencyBar() {
               WebkitBackdropFilter: "blur(16px)",
             }}
           >
-            <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 sm:px-6 py-2.5">
-              {/* Left: text + price */}
-              <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-                <p
-                  className="text-[0.625rem] sm:text-xs tracking-wide uppercase truncate"
-                  style={{
-                    fontFamily: "var(--font-mono)",
-                    color: "rgba(245, 240, 235, 0.5)",
-                  }}
-                >
-                  Vagas limitadas por semana
-                </p>
-                <span
-                  className="text-xs sm:text-sm font-semibold shrink-0"
-                  style={{ color: "var(--color-accent-light)" }}
-                >
-                  GRATUITA
-                </span>
-              </div>
+            <div className="mx-auto flex max-w-5xl items-center justify-center gap-4 px-4 sm:px-6 py-2.5">
+              <p
+                className="text-[0.625rem] sm:text-xs tracking-wide uppercase"
+                style={{
+                  fontFamily: "var(--font-mono)",
+                  color: "rgba(245, 240, 235, 0.5)",
+                }}
+              >
+                Vagas limitadas por semana
+              </p>
 
-              {/* Right: CTA */}
               <a
                 href="https://kathyelejoana.pro.typeform.com/to/p5KmnaIC/"
                 target="_blank"
