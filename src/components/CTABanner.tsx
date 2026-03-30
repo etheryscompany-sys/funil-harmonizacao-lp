@@ -2,13 +2,18 @@
 
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
-export default function CTABanner() {
+interface CTABannerProps {
+  bgVar?: string;
+}
+
+export default function CTABanner({ bgVar }: CTABannerProps) {
   return (
     <section
-      className="w-full relative z-20"
+      className="w-full xl:relative z-20"
       style={{
         paddingTop: "var(--spacing-section-sm)",
         paddingBottom: "var(--spacing-section-sm)",
+        background: bgVar || "transparent",
       }}
     >
       <div className="container-lp flex justify-center">

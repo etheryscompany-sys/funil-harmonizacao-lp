@@ -12,7 +12,7 @@ const items = [
 export default function MarqueeStrip() {
   return (
     <section
-      className="w-full overflow-hidden py-3 md:py-8 relative"
+      className="w-full overflow-hidden py-4 md:py-8 relative z-20 -mt-2 sm:-mt-4"
       style={{
         background: "var(--color-bg-contrast)",
       }}
@@ -32,8 +32,8 @@ export default function MarqueeStrip() {
         className="absolute top-0 left-0 right-0 h-px"
         style={{
           background:
-            "linear-gradient(90deg, transparent 10%, var(--color-accent-dark) 50%, transparent 90%)",
-          opacity: 0.25,
+            "linear-gradient(90deg, transparent 10%, var(--color-accent) 50%, transparent 90%)",
+          opacity: 0.35,
         }}
       />
 
@@ -42,8 +42,8 @@ export default function MarqueeStrip() {
         className="absolute bottom-0 left-0 right-0 h-px"
         style={{
           background:
-            "linear-gradient(90deg, transparent 10%, var(--color-accent-dark) 50%, transparent 90%)",
-          opacity: 0.25,
+            "linear-gradient(90deg, transparent 10%, var(--color-accent) 50%, transparent 90%)",
+          opacity: 0.35,
         }}
       />
 

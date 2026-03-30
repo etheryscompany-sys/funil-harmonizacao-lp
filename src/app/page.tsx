@@ -22,7 +22,7 @@ export default function Home() {
       
       <FeedbackSection />
       <PromiseSection />
-      <CTABanner />
+      <CTABanner bgVar="var(--color-bg-surface)" />
       
       <SpeakerSection />
       <MasterclassInfoSection />
