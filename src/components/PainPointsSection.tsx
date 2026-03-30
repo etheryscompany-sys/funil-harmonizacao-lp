@@ -11,27 +11,27 @@ import {
 const painPoints = [
   {
     icon: ChatCircleDots,
-    title: "Paciente pergunta e você não sabe explicar",
+    title: "A paciente certa não chega até você",
     description:
-      "Ele quer entender o que vai ser feito no rosto dele, mas você não tem um método visual para mostrar. Resultado: ele vai embora pesquisar no Google.",
+      "Mesmo você atendendo bem, investindo e fazendo conteúdo. Você atrai curiosa, não quem quer tratar de verdade.",
   },
   {
     icon: CurrencyDollarSimple,
-    title: "Cobra barato porque não sabe mostrar valor",
+    title: "Só fecha avulso, nunca protocolo completo",
     description:
-      "Sem uma análise facial estruturada, o paciente não enxerga a diferença entre você e quem cobra metade. Preço vira o único critério.",
+      "A paciente até vem, mas só quer uma aplicação. Você não consegue vender o tratamento completo sem parecer que tá empurrando.",
   },
   {
     icon: ClockCountdown,
-    title: "Consulta sem protocolo = tempo jogado fora",
+    title: "Investe em marketing e não vê retorno",
     description:
-      "Você avalia no olhômetro, propõe tratamento genérico, e o paciente sente que qualquer profissional faria o mesmo. Ele some.",
+      "Já gastou com tráfego, fez conteúdo, tentou de tudo. Mas o resultado não aparece porque o problema não é o marketing — é o posicionamento.",
   },
   {
     icon: UserMinus,
-    title: "Certificações que não geram confiança",
+    title: "Não sabe o que precisa mudar primeiro",
     description:
-      "Você tem especializações, estuda todo dia. Mas na hora de mostrar ao paciente exatamente o que ele precisa, falta um método. O problema é a comunicação, não o conhecimento.",
+      "São tantas variáveis — preço, conteúdo, atendimento, oferta — que você fica paralisada sem saber por onde começar. Cada caso é diferente.",
   },
 ];
 
@@ -61,10 +61,10 @@ export default function PainPointsSection() {
             className="text-[1.875rem] sm:text-4xl md:text-5xl font-semibold tracking-normal leading-[1.1] max-w-[20ch] mb-10 md:mb-16 text-center lg:text-left mx-auto lg:mx-0"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Você estuda{" "}
-            <span style={{ color: "var(--color-accent)" }}>demais</span> para
-            converter de{" "}
-            <span style={{ color: "var(--color-accent)" }}>menos</span>.
+            Você faz{" "}
+            <span style={{ color: "var(--color-accent)" }}>tudo certo</span> e
+            mesmo assim não{" "}
+            <span style={{ color: "var(--color-accent)" }}>funciona</span>.
           </h2>
         </ScrollReveal>
 

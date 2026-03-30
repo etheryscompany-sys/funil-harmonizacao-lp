@@ -50,13 +50,13 @@ export default function StickyUrgencyBar() {
                     color: "rgba(245, 240, 235, 0.5)",
                   }}
                 >
-                  Guia gratuito de análise facial
+                  Vagas limitadas por semana
                 </p>
                 <span
                   className="text-xs sm:text-sm font-semibold shrink-0"
                   style={{ color: "var(--color-accent-light)" }}
                 >
-                  R$ 0
+                  GRATUITA
                 </span>
               </div>
 
@@ -82,7 +82,7 @@ export default function StickyUrgencyBar() {
                   e.currentTarget.style.boxShadow = "0 2px 8px rgba(184, 132, 79, 0.25), inset 0 1px 0 rgba(255,255,255,0.12)";
                 }}
               >
-                QUERO O GUIA
+                QUERO MINHA VAGA
               </a>
             </div>
           </div>

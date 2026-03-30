@@ -7,26 +7,26 @@ const steps = [
   {
     icon: Crosshair,
     number: "01",
-    title: "Leitura Facial Estruturada",
-    subtitle: "Proporções, terços e quintos — o mapa do rosto",
+    title: "Por que a paciente certa não chega até você",
+    subtitle: "Mesmo você atendendo bem, investindo e fazendo conteúdo",
     description:
-      "Aprenda a dividir o rosto em zonas de análise e identificar exatamente onde estão os desequilíbrios. Sem achismo, com método.",
+      "Vamos identificar juntas o que está afastando as pacientes que realmente querem tratar de verdade — e atraindo só curiosas.",
   },
   {
     icon: CurrencyDollar,
     number: "02",
-    title: "Diagnóstico de Assimetrias",
-    subtitle: "O que olhar, como medir e quando intervir",
+    title: "O que mudar pra parar de fechar só avulso",
+    subtitle: "E começar a vender protocolo completo sem parecer que tá empurrando",
     description:
-      "O protocolo que transforma a sua avaliação numa ferramenta de venda. Quando o paciente vê o diagnóstico, ele entende o valor do tratamento.",
+      "Você vai entender o que ajustar no seu posicionamento, na sua oferta e na sua comunicação para fechar protocolos de alto valor.",
   },
   {
     icon: Sparkle,
     number: "03",
-    title: "Plano de Tratamento Visual",
-    subtitle: "Mostre a transformação antes de tocar no paciente",
+    title: "O caminho mais seguro pro seu momento",
+    subtitle: "Não é fórmula genérica, é o que faz sentido pra onde a sua clínica tá hoje",
     description:
-      "O passo final que fecha o protocolo: comunicar ao paciente exatamente o resultado esperado. Clareza gera confiança, confiança gera conversão.",
+      "Você sai da sessão com um plano claro e personalizado do que precisa mudar primeiro — sem achismo, sem fórmula pronta.",
   },
 ];
 
@@ -59,7 +59,7 @@ export default function PromiseSection() {
                   className="font-mono text-xs tracking-[0.2em] uppercase block mb-6 text-center lg:text-left"
                   style={{ color: "var(--color-text-muted)" }}
                 >
-                  // O que você vai aprender
+                  // O que você descobre na Anamnese
                 </span>
               </ScrollReveal>
               <ScrollReveal delay={100}>
@@ -67,11 +67,10 @@ export default function PromiseSection() {
                   className="text-[1.875rem] sm:text-4xl md:text-5xl font-semibold tracking-normal leading-[1.1] mb-6 text-center lg:text-left"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
-                  O Sistema que as{" "}
+                  O que você descobre na{" "}
                   <span style={{ color: "var(--color-accent)" }}>
-                    Maiores Referências
-                  </span>{" "}
-                  Usam.
+                    Anamnese Estratégica
+                  </span>.
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={200}>
@@ -79,7 +78,7 @@ export default function PromiseSection() {
                   className="text-base leading-relaxed max-w-[45ch] text-center lg:text-left mx-auto lg:mx-0"
                   style={{ color: "var(--color-text-secondary)" }}
                 >
-                  Neste guia, você vai ver na prática o método de análise facial que as profissionais que faturam R$ 50k+ usam nos bastidores — e como aplicar na sua realidade.
+                  Uma sessão individual e gratuita comigo para diagnosticar o que tá travando a sua clínica — e sair com um plano claro do que mudar.
                 </p>
               </ScrollReveal>
             </div>

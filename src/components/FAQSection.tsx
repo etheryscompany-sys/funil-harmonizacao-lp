@@ -7,29 +7,29 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const faqs = [
   {
-    question: "O guia é realmente gratuito?",
+    question: "A sessão é realmente gratuita?",
     answer:
-      "Sim, 100% gratuito. Basta preencher o formulário e você recebe acesso imediato ao guia completo de análise facial. Sem cartão, sem compromisso.",
+      "Sim, 100% gratuita e sem compromisso. É uma sessão individual comigo onde eu analiso o cenário da sua clínica e te mostro o que precisa mudar.",
   },
   {
-    question: "Isso funciona para quem está começando na estética?",
+    question: "Funciona para quem está começando?",
     answer:
-      "Sim. O método foi estruturado do zero, então serve tanto para quem está começando quanto para quem já atende mas quer ter mais precisão e confiança na análise facial.",
+      "Sim. A anamnese é personalizada para o seu momento. Seja você iniciante estruturando a clínica ou experiente querendo escalar, o diagnóstico se adapta ao seu caso.",
   },
   {
-    question: "Vou aprender algo prático ou é só teoria?",
+    question: "É consultoria ou vão tentar me vender algo?",
     answer:
-      "O guia é focado em aplicação prática. Você recebe o passo a passo para analisar proporções, identificar assimetrias e montar o plano de tratamento visual do paciente.",
+      "É uma sessão de diagnóstico real. Você sai com clareza do que precisa mudar, independente de qualquer coisa. Se fizer sentido para os dois lados, posso te mostrar como posso ajudar mais.",
   },
   {
-    question: "Serve para qual área da saúde?",
+    question: "Para quem é a Anamnese Estratégica?",
     answer:
-      "O método é aplicável para biomédicas, médicas, enfermeiras, fisioterapeutas, dentistas e qualquer profissional que trabalhe com harmonização orofacial ou estética facial.",
+      "Para biomédicas, médicas, enfermeiras, fisioterapeutas, dentistas e profissionais de harmonização orofacial que atendem bem mas não conseguem atrair a paciente certa ou fechar protocolo completo.",
   },
   {
-    question: "Como recebo o guia depois de preencher?",
+    question: "Como funciona depois que eu preencho?",
     answer:
-      "Após preencher o formulário, você recebe acesso imediato. O material é 100% online e pode ser acessado de qualquer dispositivo, a qualquer momento.",
+      "Depois de preencher o formulário, minha equipe entra em contato para agendar a sessão no melhor horário para você. As vagas são limitadas por semana.",
   },
 ];
 

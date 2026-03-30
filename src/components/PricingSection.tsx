@@ -11,12 +11,12 @@ const ARROW_SVG = (
 );
 
 const benefits = [
-  "Método completo de análise facial estruturada",
-  "Protocolo de leitura de proporções e terços",
-  "Diagnóstico de assimetrias passo a passo",
-  "Como comunicar o plano de tratamento ao paciente",
-  "Aplicável em qualquer especialidade da estética",
-  "Acesso imediato e 100% gratuito",
+  "Sessão individual e personalizada com Kathyele",
+  "Diagnóstico do que tá travando a sua clínica",
+  "Clareza sobre por que a paciente certa não vem",
+  "Plano claro do que mudar no seu caso específico",
+  "Sem fórmula genérica — cada clínica é diferente",
+  "100% gratuita e sem compromisso",
 ];
 
 const stagger = {
@@ -64,7 +64,7 @@ export default function PricingSection() {
             className="font-mono text-xs tracking-[0.2em] uppercase block mb-6 text-center lg:text-left"
             style={{ color: "var(--color-text-muted)" }}
           >
-            // O que você recebe
+            // Sua sessão
           </span>
         </ScrollReveal>
 
@@ -73,8 +73,8 @@ export default function PricingSection() {
             className="text-[1.875rem] sm:text-4xl md:text-5xl font-semibold leading-[1.1] max-w-[22ch] mb-3 text-center lg:text-left mx-auto lg:mx-0"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Comece{" "}
-            <span style={{ color: "var(--color-accent)" }}>agora</span>, de graça.
+            Uma decisão muda{" "}
+            <span style={{ color: "var(--color-accent)" }}>tudo</span>.
           </h2>
         </ScrollReveal>
 
@@ -83,7 +83,7 @@ export default function PricingSection() {
             className="text-sm italic mb-14 max-w-[50ch] text-center lg:text-left mx-auto lg:mx-0"
             style={{ color: "var(--color-text-secondary)" }}
           >
-            Preencha o formulário e receba acesso imediato ao guia completo de análise facial.
+            Preencha o formulário e agende sua anamnese estratégica gratuita.
           </p>
         </ScrollReveal>
 
@@ -124,13 +124,13 @@ export default function PricingSection() {
                   className="text-2xl md:text-3xl font-bold uppercase tracking-wide"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
-                  Guia de Análise Facial
+                  Anamnese Estratégica
                 </h3>
                 <p
                   className="text-sm mt-1"
                   style={{ color: "var(--color-text-secondary)" }}
                 >
-                  Método estruturado por Kathyele Joana
+                  Sessão individual com Kathyele Joana
                 </p>
               </div>
 
@@ -181,7 +181,7 @@ export default function PricingSection() {
                     className="text-sm mt-2"
                     style={{ color: "var(--color-text-secondary)" }}
                   >
-                    Sem cartão, sem compromisso
+                    Vagas limitadas por semana
                   </p>
                 </div>
 
@@ -191,7 +191,7 @@ export default function PricingSection() {
                   rel="noopener noreferrer"
                   className="btn-primary w-full justify-center"
                 >
-                  QUERO RECEBER O GUIA
+                  VERIFICAR DISPONIBILIDADE
                   {ARROW_SVG}
                 </a>
               </div>

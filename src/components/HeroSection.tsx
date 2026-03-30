@@ -100,13 +100,13 @@ export default function HeroSection() {
             {/* Top bar — hidden on mobile */}
             <motion.div variants={fadeUp} className="hidden sm:flex flex-row items-center gap-3">
               <span className="badge-mono-hero inline-block">
-                GUIA GRATUITO
+                ANÁLISE GRATUITA
               </span>
               <span
                 className="font-mono text-[0.6875rem] tracking-[0.12em] uppercase"
                 style={{ color: "rgba(245, 240, 235, 0.5)" }}
               >
-                Método Validado | Passo a Passo
+                Sessão Individual | Gratuita
               </span>
             </motion.div>
 
@@ -116,7 +116,7 @@ export default function HeroSection() {
               style={{ color: "var(--color-accent-light)", opacity: 0.6 }}
               variants={fadeUp}
             >
-              Harmonização Orofacial
+              Anamnese Estratégica
             </motion.p>
 
             {/* Headline — empathy-driven */}
@@ -124,9 +124,9 @@ export default function HeroSection() {
               className="text-[1.5rem] sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] tracking-normal"
               variants={fadeUp}
             >
-              Se você é boa na técnica, mas ainda não fecha protocolos de{" "}
-              <span style={{ color: "var(--color-accent-light)" }}>R$ 5.000+</span>{" "}
-              com confiança, o problema está na análise facial.
+              Se você é boa na técnica, investe em marketing, faz conteúdo{" "}
+              <span style={{ color: "rgba(245, 240, 235, 0.6)" }}>mas ainda assim a paciente certa não vem,</span>{" "}
+              <span style={{ color: "var(--color-accent-light)" }}>essa análise é pra você.</span>
             </motion.h1>
 
             {/* Subtitle — promise */}
@@ -135,7 +135,7 @@ export default function HeroSection() {
               style={{ color: "rgba(245, 240, 235, 0.85)" }}
               variants={fadeUp}
             >
-              Descubra o método estruturado que doutoras usam para enxergar proporções, identificar assimetrias e mostrar ao paciente a transformação antes de tocar no rosto.
+              Em uma sessão gratuita e individual comigo, vou identificar o que tá impedindo a sua clínica de atrair paciente que quer tratar de verdade e fechar protocolo completo.
             </motion.h2>
 
             {/* Exclusive tag */}
@@ -144,8 +144,8 @@ export default function HeroSection() {
               style={{ color: "rgba(245, 240, 235, 0.6)" }}
               variants={fadeUp}
             >
-              <strong style={{ color: "rgba(245, 240, 235, 0.85)" }}>Para biomédicas, médicas, fisioterapeutas, dentistas e dermatologistas</strong>{" "}
-              que investem em técnica e conteúdo, mas ainda perdem pacientes por não saber comunicar o plano de tratamento.
+              Você sai com um{" "}
+              <strong style={{ color: "rgba(245, 240, 235, 0.85)" }}>plano claro do que precisa mudar no seu caso.</strong>
             </motion.p>
 
             {/* CTA */}
@@ -159,7 +159,7 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="btn-primary w-full sm:w-auto"
               >
-                QUERO APRENDER ANÁLISE FACIAL
+                QUERO MINHA VAGA
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0">
                   <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>

@@ -37,7 +37,7 @@ export default function Preloader() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0, transition: { delay: 0.1, duration: 0.6, ease: [0.16, 1, 0.3, 1] } }}
             >
-              ANÁLISE FACIAL
+              ANAMNESE ESTRATÉGICA
             </motion.p>
             <motion.h1
               style={{
@@ -51,7 +51,7 @@ export default function Preloader() {
               initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0, transition: { delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] } }}
             >
-              HARMONIZAÇÃO OROFACIAL
+              KATHYELE JOANA
             </motion.h1>
             <motion.div
               className="h-px rounded-full"

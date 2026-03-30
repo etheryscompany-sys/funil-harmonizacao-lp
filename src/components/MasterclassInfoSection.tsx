@@ -53,7 +53,7 @@ export default function MasterclassInfoSection() {
             color: "rgba(245, 240, 235, 0.015)",
           }}
         >
-          ANÁLISE FACIAL
+          ANAMNESE
         </span>
       </div>
 
@@ -91,7 +91,7 @@ export default function MasterclassInfoSection() {
               style={{ color: "rgba(212, 169, 110, 0.45)" }}
               variants={fadeUp}
             >
-              Guia completo
+              Sessão individual
             </motion.span>
 
             {/* Headline */}
@@ -100,12 +100,12 @@ export default function MasterclassInfoSection() {
               style={{ fontFamily: "var(--font-display)" }}
               variants={fadeUp}
             >
-              Método de{" "}
+              Anamnese{" "}
               <span style={{ color: "var(--color-accent-light)" }}>
-                Análise Facial
+                Estratégica
               </span>
               <br />
-              Passo a Passo
+              Gratuita e Individual
             </motion.h2>
 
             {/* Divider */}
@@ -127,7 +127,7 @@ export default function MasterclassInfoSection() {
                 className="font-mono text-xs tracking-[0.15em] uppercase"
                 style={{ color: "rgba(245, 240, 235, 0.7)" }}
               >
-                Acesso imediato
+                Sessão 1:1 comigo
               </span>
               <span
                 className="hidden sm:block w-1 h-1 rounded-full"
@@ -137,7 +137,7 @@ export default function MasterclassInfoSection() {
                 className="font-mono text-xs tracking-[0.15em] uppercase"
                 style={{ color: "rgba(245, 240, 235, 0.7)" }}
               >
-                100% online e gratuito
+                100% gratuita
               </span>
             </motion.div>
 
@@ -147,7 +147,7 @@ export default function MasterclassInfoSection() {
               style={{ color: "rgba(245, 240, 235, 0.65)" }}
               variants={fadeUp}
             >
-              Preencha o formulário e receba o guia completo
+              Preencha o formulário e agende sua sessão de diagnóstico
             </motion.p>
 
             {/* CTA */}
@@ -158,7 +158,7 @@ export default function MasterclassInfoSection() {
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex"
               >
-                QUERO O GUIA GRATUITO
+                QUERO MINHA ANAMNESE
                 <svg
                   width="16"
                   height="16"

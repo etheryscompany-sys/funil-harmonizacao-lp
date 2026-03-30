@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   other: {
     "facebook-domain-verification": "j8xlulyw4d75zcyukrxkozh13r4poe",
   },
-  title: "Análise Facial | Harmonização Orofacial — Kathyele Joana",
+  title: "Anamnese Estratégica | Kathyele Joana — Harmonização Orofacial",
   description:
-    "Descubra o método de análise facial que biomédicas, médicas e fisioterapeutas usam para dominar harmonização e fechar protocolos de R$ 5.000+.",
+    "Sessão gratuita e individual para identificar o que está impedindo sua clínica de atrair a paciente certa e fechar protocolo completo.",
   openGraph: {
-    title: "Análise Facial | Harmonização Orofacial — Kathyele Joana",
+    title: "Anamnese Estratégica | Kathyele Joana — Harmonização Orofacial",
     description:
-      "O método estruturado para analisar rostos, identificar assimetrias e fechar protocolos de harmonização facial com confiança.",
+      "Sessão gratuita e individual para identificar o que está impedindo sua clínica de atrair a paciente certa e fechar protocolo completo.",
     type: "website",
   },
 };

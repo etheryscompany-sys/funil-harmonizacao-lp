@@ -87,7 +87,7 @@ export default function SpeakerSection() {
             className="font-mono text-xs tracking-[0.2em] uppercase block mb-10 md:mb-14"
             style={{ color: "rgba(212, 169, 110, 0.5)" }}
           >
-            // Quem criou o método
+            // Quem é Kathyele Joana
           </span>
         </ScrollReveal>
 
@@ -143,9 +143,9 @@ export default function SpeakerSection() {
                 className="text-[1.875rem] sm:text-4xl md:text-5xl lg:text-[3.25rem] font-semibold tracking-normal leading-[1.1] mb-6"
                 style={{ fontFamily: "var(--font-display)" }}
               >
-                Quem vai te guiar{" "}
+                Quem vai fazer a{" "}
                 <span style={{ color: "var(--color-accent-light)" }}>
-                  nesse método?
+                  sua análise?
                 </span>
               </h2>
             </ScrollReveal>
@@ -170,8 +170,7 @@ export default function SpeakerSection() {
                   className="text-sm tracking-wide"
                   style={{ color: "rgba(212, 169, 110, 0.9)" }}
                 >
-                  Especialista em análise facial &amp; harmonização
-                  orofacial
+                  Estrategista de marketing e vendas especializada em clínicas de harmonização facial
                 </p>
               </div>
             </ScrollReveal>
@@ -191,9 +190,10 @@ export default function SpeakerSection() {
                     color: "rgba(245, 240, 235, 0.9)",
                   }}
                 >
-                  Ensino profissionais de estética a dominarem a análise
-                  facial com método, precisão e confiança — para fechar
-                  protocolos de alto valor com autoridade.
+                  Já ajudei dezenas de profissionais que viviam no mesmo
+                  ciclo, atendendo bem, investindo e mesmo assim só atraindo
+                  curiosa — a construir uma clínica com pacientes que querem
+                  tratar de verdade.
                 </p>
               </blockquote>
             </ScrollReveal>
@@ -204,13 +204,12 @@ export default function SpeakerSection() {
                 className="text-[0.9375rem] md:text-base leading-relaxed max-w-[55ch] mb-10"
                 style={{ color: "rgba(245, 240, 235, 0.7)" }}
               >
-                Em mais de 3 anos, já formei{" "}
+                Em mais de 3 anos, já ajudei{" "}
                 <strong style={{ color: "var(--color-accent-light)" }}>
                   +100 profissionais
                 </strong>{" "}
-                que hoje dominam a análise facial e usam o método para fechar
-                protocolos de harmonização com segurança, precisão e
-                resultados consistentes.
+                a construir clínicas com previsibilidade, fechando protocolo
+                completo sem depender de promoção ou indicação.
               </p>
             </ScrollReveal>
 

@@ -1,12 +1,12 @@
 "use client";
 
 const items = [
-  "ANÁLISE FACIAL",
-  "HARMONIZAÇÃO OROFACIAL",
+  "ANAMNESE ESTRATÉGICA",
+  "SESSÃO GRATUITA",
+  "PROTOCOLO COMPLETO",
+  "PACIENTE CERTA",
   "ALTO TICKET",
-  "HOF & ESTÉTICA",
-  "PROTOCOLO ESTRUTURADO",
-  "MÉTODO VALIDADO",
+  "CLÍNICA POSICIONADA",
 ];
 
 export default function MarqueeStrip() {
