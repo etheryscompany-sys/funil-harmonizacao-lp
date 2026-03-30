@@ -119,22 +119,23 @@ export default function HeroSection() {
               Harmonização Orofacial
             </motion.p>
 
-            {/* Headline — smaller on mobile so R$ 5.000+ fits one line */}
+            {/* Headline — empathy-driven */}
             <motion.h1
               className="text-[1.5rem] sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.1] tracking-normal"
               variants={fadeUp}
             >
-              Aprenda a analisar rostos com o método que doutoras usam para fechar protocolos de harmonização de{" "}
-              <span style={{ color: "var(--color-accent-light)" }}>R$ 5.000+</span>
+              Se você é boa na técnica, mas ainda não fecha protocolos de{" "}
+              <span style={{ color: "var(--color-accent-light)" }}>R$ 5.000+</span>{" "}
+              com confiança, o problema está na análise facial.
             </motion.h1>
 
-            {/* Subtitle — no dash */}
+            {/* Subtitle — promise */}
             <motion.h2
               className="text-[1.0625rem] md:text-lg lg:text-xl leading-relaxed max-w-[48ch]"
               style={{ color: "rgba(245, 240, 235, 0.85)" }}
               variants={fadeUp}
             >
-              O guia prático para enxergar proporções, corrigir assimetrias e comunicar a transformação que o paciente precisa ver antes de investir.
+              Descubra o método estruturado que doutoras usam para enxergar proporções, identificar assimetrias e mostrar ao paciente a transformação antes de tocar no rosto.
             </motion.h2>
 
             {/* Exclusive tag */}
@@ -144,7 +145,7 @@ export default function HeroSection() {
               variants={fadeUp}
             >
               <strong style={{ color: "rgba(245, 240, 235, 0.85)" }}>Para biomédicas, médicas, fisioterapeutas, dentistas e dermatologistas</strong>{" "}
-              que querem dominar a análise facial e parar de perder pacientes por falta de posicionamento técnico.
+              que investem em técnica e conteúdo, mas ainda perdem pacientes por não saber comunicar o plano de tratamento.
             </motion.p>
 
             {/* CTA */}
