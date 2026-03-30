@@ -12,40 +12,30 @@ const items = [
 export default function MarqueeStrip() {
   return (
     <section
-      className="w-full overflow-hidden py-4 md:py-8 relative z-20 -mt-2 sm:-mt-4"
+      className="w-full relative z-20"
       style={{
-        background: "var(--color-bg-contrast)",
+        background: "var(--color-hero-bg)",
+        marginTop: "-1px" // Prevent rounding gaps
       }}
     >
-      {/* Accent glow — subtle center warmth */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          opacity: 0.04,
-          background:
-            "radial-gradient(ellipse at 50% 50%, var(--color-accent) 0%, transparent 70%)",
-        }}
-      />
-
-      {/* Top border — thin accent gradient */}
-      <div
-        className="absolute top-0 left-0 right-0 h-px"
-        style={{
-          background:
-            "linear-gradient(90deg, transparent 10%, var(--color-accent) 50%, transparent 90%)",
-          opacity: 0.35,
-        }}
-      />
-
-      {/* Bottom border — thin accent gradient */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-px"
-        style={{
-          background:
-            "linear-gradient(90deg, transparent 10%, var(--color-accent) 50%, transparent 90%)",
-          opacity: 0.35,
-        }}
-      />
+      {/* Container providing dark background margin above and below the lines */}
+      <div className="py-2 pb-6 md:pb-10">
+        <div
+          className="relative overflow-hidden py-4 md:py-6"
+          style={{
+            borderTop: "1px solid rgba(184,132,79, 0.35)",
+            borderBottom: "1px solid rgba(184,132,79, 0.35)",
+          }}
+        >
+          {/* Accent glow — subtle center warmth */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              opacity: 0.04,
+              background:
+                "radial-gradient(ellipse at 50% 50%, var(--color-accent) 0%, transparent 70%)",
+            }}
+          />
 
       <div className="flex whitespace-nowrap animate-marquee">
         {Array.from({ length: 4 }).map((_, rep) =>
@@ -73,6 +63,8 @@ export default function MarqueeStrip() {
             </span>
           ))
         )}
+      </div>
+        </div>
       </div>
     </section>
   );

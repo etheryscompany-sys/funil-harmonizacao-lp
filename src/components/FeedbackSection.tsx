@@ -38,7 +38,8 @@ export default function FeedbackSection() {
       style={{
         paddingTop: "calc(var(--spacing-section) * 1.25)",
         paddingBottom: "var(--spacing-section)",
-        background: "var(--color-bg-surface)",
+        background: "var(--color-hero-bg)",
+        color: "var(--color-text-inverse)",
       }}
     >
       {/* Dual warm radial glows — taste-skill: tinted, not neon */}
@@ -56,7 +57,7 @@ export default function FeedbackSection() {
             <div className="w-12 h-[1px]" style={{ background: "linear-gradient(90deg, transparent, var(--color-accent))" }} />
             <span
               className="font-mono text-[0.6875rem] tracking-[0.25em] uppercase text-center"
-              style={{ color: "var(--color-text-muted)" }}
+              style={{ color: "rgba(245, 240, 235, 0.5)" }}
             >
               Resultados Reais
             </span>
@@ -88,21 +89,11 @@ export default function FeedbackSection() {
               variants={fadeUpItem}
               className="w-full flex h-full group"
             >
-              <div 
-                className="relative w-full rounded-[1.25rem] overflow-hidden flex-1 self-stretch transition-all duration-700 hover:scale-[1.02]"
-                style={{ 
-                  aspectRatio: "3/4",
-                  boxShadow: "0 12px 32px -12px rgba(0,0,0,0.15)",
-                }}
-              >
-                <Image 
-                  src={item.src} 
-                  alt={item.alt} 
-                  fill 
-                  unoptimized
-                  className="object-cover object-top scale-[1.01] group-hover:scale-105 transition-transform duration-700 ease-out" 
-                />
-              </div>
+              <img 
+                src={item.src} 
+                alt={item.alt} 
+                className="w-full h-auto rounded-[1.25rem] overflow-hidden flex-1 self-stretch transition-transform duration-700 hover:scale-[1.02] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.6)]"
+              />
             </motion.div>
           ))}
         </motion.div>
