@@ -92,7 +92,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left content — 7 cols */}
           <motion.div
-            className="lg:col-span-12 flex flex-col gap-5 md:gap-8 items-center text-center mx-auto max-w-4xl"
+            className="lg:col-span-7 flex flex-col gap-5 md:gap-8 items-center lg:items-start text-center lg:text-left mx-auto lg:mx-0 max-w-xl"
             variants={stagger}
             initial="hidden"
             animate="visible"
@@ -150,7 +150,7 @@ export default function HeroSection() {
 
             {/* CTA */}
             <motion.div
-              className="flex flex-col items-center w-full sm:w-auto"
+              className="flex flex-col items-start w-full sm:w-auto"
               variants={fadeUp}
             >
               <a
@@ -167,7 +167,33 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
 
-          {/* Right visual removed to center content */}
+          {/* Right visual - Restored for Desktop */}
+          <motion.div
+            className="hidden lg:block lg:col-span-5 relative min-h-[600px] w-full"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <div className="absolute inset-0 right-[-10vw] max-w-[120%]">
+              <Image
+                src="/kathyele-hero-v2.webp"
+                alt="Kathyele Joana Mentora de Estética"
+                fill
+                className="object-contain object-right-bottom"
+                sizes="(max-width: 1024px) 0px, 50vw"
+                priority
+              />
+              <div
+                className="absolute inset-0 pointer-events-none"
+                style={{
+                  boxShadow: `
+                    inset 100px 0 100px -20px var(--color-hero-bg),
+                    inset 0 -100px 100px -20px var(--color-hero-bg)
+                  `,
+                }}
+              />
+            </div>
+          </motion.div>
         </div>
       </motion.div>
 

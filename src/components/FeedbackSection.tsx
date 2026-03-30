@@ -92,7 +92,7 @@ export default function FeedbackSection() {
               <img 
                 src={item.src} 
                 alt={item.alt} 
-                className="w-full aspect-[5/4] md:aspect-[4/3] object-cover object-top rounded-[1.25rem] overflow-hidden transition-transform duration-700 hover:scale-[1.02] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.6)]"
+                className="w-full h-auto rounded-[1.25rem] overflow-hidden flex-1 self-stretch transition-transform duration-700 hover:scale-[1.02] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.6)]"
               />
             </motion.div>
           ))}
