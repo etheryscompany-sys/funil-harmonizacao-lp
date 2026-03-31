@@ -190,6 +190,7 @@ export default function PricingSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary w-full justify-center"
+                  onClick={() => { try { if (typeof window !== "undefined" && (window as any).fbq) { (window as any).fbq("trackCustom", "InitiateForm"); } } catch {} }}
                 >
                   VERIFICAR DISPONIBILIDADE
                   {ARROW_SVG}

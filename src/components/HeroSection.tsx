@@ -158,6 +158,7 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary w-full sm:w-auto"
+                onClick={() => { try { if (typeof window !== "undefined" && (window as any).fbq) { (window as any).fbq("trackCustom", "InitiateForm"); } } catch {} }}
               >
                 QUERO MINHA VAGA
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="shrink-0">

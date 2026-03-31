@@ -23,6 +23,7 @@ export default function CTABanner({ bgVar }: CTABannerProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex"
+            onClick={() => { try { if (typeof window !== "undefined" && (window as any).fbq) { (window as any).fbq("trackCustom", "InitiateForm"); } } catch {} }}
           >
             QUERO MINHA VAGA
             <svg

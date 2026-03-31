@@ -55,6 +55,7 @@ export default function StickyUrgencyBar() {
                 href="https://kathyelejoana.pro.typeform.com/to/p5KmnaIC/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => { try { if (typeof window !== "undefined" && (window as any).fbq) { (window as any).fbq("trackCustom", "InitiateForm"); } } catch {} }}
                 className="shrink-0 rounded-lg px-4 sm:px-5 py-2 text-[0.625rem] sm:text-xs font-semibold tracking-[0.15em] uppercase transition-all duration-500"
                 style={{
                   fontFamily: "var(--font-mono)",
