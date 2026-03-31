@@ -150,7 +150,7 @@ export default function HeroSection() {
 
             {/* CTA */}
             <motion.div
-              className="flex flex-col items-start w-full sm:w-auto"
+              className="flex flex-col items-center lg:items-start w-full sm:w-auto"
               variants={fadeUp}
             >
               <a
@@ -169,27 +169,32 @@ export default function HeroSection() {
 
           {/* Right visual - Restored for Desktop */}
           <motion.div
-            className="hidden lg:block lg:col-span-5 relative min-h-[600px] w-full"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-5 relative hidden lg:flex items-center justify-center"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="absolute inset-0 right-[-10vw] max-w-[120%]">
+            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
               <Image
                 src="/kathyele-hero-v2.webp"
                 alt="Kathyele Joana Mentora de Estética"
                 fill
-                className="object-contain object-right-bottom"
-                sizes="(max-width: 1024px) 0px, 50vw"
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 0px, 42vw"
                 priority
+                loading="eager"
               />
               <div
-                className="absolute inset-0 pointer-events-none"
+                className="absolute bottom-0 left-0 right-0 h-1/3 pointer-events-none"
                 style={{
-                  boxShadow: `
-                    inset 100px 0 100px -20px var(--color-hero-bg),
-                    inset 0 -100px 100px -20px var(--color-hero-bg)
-                  `,
+                  background: "linear-gradient(to top, var(--color-hero-bg) 0%, transparent 100%)",
+                }}
+              />
+              <div
+                className="absolute inset-0 rounded-2xl pointer-events-none"
+                style={{
+                  border: "1px solid rgba(255,255,255,0.04)",
+                  boxShadow: "inset 0 1px 0 rgba(255,255,255,0.06), inset 0 0 80px rgba(0,0,0,0.2)",
                 }}
               />
             </div>

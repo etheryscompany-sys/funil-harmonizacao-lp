@@ -26,10 +26,30 @@ const fadeUpItem = {
 
 export default function FeedbackSection() {
   const images = [
-    { src: "/feedbacks/1.png", alt: "Feedback de aluna 1" },
-    { src: "/feedbacks/2.png", alt: "Feedback de aluna 2" },
-    { src: "/feedbacks/3.png", alt: "Feedback de aluna 3" },
-    { src: "/feedbacks/4.png", alt: "Feedback de aluna 4" },
+    {
+      src: "/feedbacks/1.png",
+      alt: "Feedback de aluna 1",
+      frameClassName: "aspect-[4/5]",
+      imageClassName: "object-cover scale-[1.14] object-top",
+    },
+    {
+      src: "/feedbacks/2.png",
+      alt: "Feedback de aluna 2",
+      frameClassName: "aspect-[4/4.15] sm:aspect-[4/5]",
+      imageClassName: "object-cover scale-[1.1] object-top sm:scale-[1.14]",
+    },
+    {
+      src: "/feedbacks/3.png",
+      alt: "Feedback de aluna 3",
+      frameClassName: "aspect-[4/4.05] sm:aspect-[4/5]",
+      imageClassName: "object-cover scale-[1.22] object-[center_12%] sm:scale-[1.18] sm:object-top",
+    },
+    {
+      src: "/feedbacks/4.png",
+      alt: "Feedback de aluna 4",
+      frameClassName: "aspect-[4/4.1] sm:aspect-[4/5]",
+      imageClassName: "object-cover scale-[1.1] object-[center_10%] sm:scale-[1.16] sm:object-top",
+    },
   ];
 
   return (
@@ -77,22 +97,24 @@ export default function FeedbackSection() {
         
         {/* Stagger orchestration — taste-skill Section Feedback */}
         <motion.div 
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8 items-stretch"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 sm:gap-3 lg:gap-3.5 items-stretch"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
         >
-          {images.map((item) => (
+          {images.map((item, index) => (
             <motion.div 
               key={item.src} 
               variants={fadeUpItem}
-              className="w-full flex h-full group"
+              className={`relative w-full overflow-hidden rounded-[1rem] ${item.frameClassName} ${index === 0 ? "" : "-mt-14 sm:mt-0"}`}
             >
-              <img 
+              <Image
                 src={item.src} 
                 alt={item.alt} 
-                className="w-full h-auto rounded-[1.25rem] overflow-hidden flex-1 self-stretch transition-transform duration-700 hover:scale-[1.02] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.6)]"
+                fill
+                sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 25vw"
+                className={item.imageClassName}
               />
             </motion.div>
           ))}
