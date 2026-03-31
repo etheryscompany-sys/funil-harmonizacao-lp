@@ -6,7 +6,7 @@ import Preloader from "@/components/Preloader";
 
 export const metadata: Metadata = {
   other: {
-    "facebook-domain-verification": "j8xlulyw4d75zcyukrxkozh13r4poe",
+    "facebook-domain-verification": "s8rak8u5f2thqouaswsk0w3culaqem",
   },
   title: "Anamnese Estratégica | Kathyele Joana",
   description:
@@ -45,6 +45,7 @@ export default function RootLayout({
             `,
           }}
         />
+        <Script id="tracking-script" src="/scripts/tracking.js" strategy="afterInteractive" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -61,6 +62,15 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=377992697994811&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
         <Preloader />
         <LenisProvider>{children}</LenisProvider>
       </body>
