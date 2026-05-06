@@ -50,7 +50,7 @@ export default function TargetAudienceSection() {
             className="font-mono text-xs tracking-[0.2em] uppercase block mb-6 text-center lg:text-left"
             style={{ color: "var(--color-text-muted)" }}
           >
-            // Para quem é
+            {"// Para quem é"}
           </span>
         </ScrollReveal>
 
@@ -141,4 +141,3 @@ export default function TargetAudienceSection() {
     </section>
   );
 }
-

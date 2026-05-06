@@ -79,7 +79,7 @@ export default function FeedbackSection() {
               className="font-mono text-[0.6875rem] tracking-[0.25em] uppercase text-center"
               style={{ color: "rgba(245, 240, 235, 0.5)" }}
             >
-              Resultados Reais
+              {"// RESULTADOS REAIS"}
             </span>
             <div className="w-12 h-[1px]" style={{ background: "linear-gradient(-90deg, transparent, var(--color-accent))" }} />
           </div>
@@ -90,8 +90,7 @@ export default function FeedbackSection() {
             className="text-[1.875rem] sm:text-4xl md:text-5xl lg:text-[3.25rem] font-semibold tracking-normal leading-[1.05] mb-16 text-center max-w-3xl mx-auto"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            O que as nossas mentoradas{" "}
-            <span style={{ color: "var(--color-accent)" }}>dizem</span>.
+            O que as nossas mentoradas dizem.
           </h2>
         </ScrollReveal>
         

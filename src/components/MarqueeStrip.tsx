@@ -12,13 +12,12 @@ const items = [
 export default function MarqueeStrip() {
   return (
     <section
-      className="w-full relative z-20"
+      className="relative z-20 w-full"
       style={{
         background: "var(--color-hero-bg)",
-        marginTop: "-1px" // Prevent rounding gaps
+        marginTop: "-1px",
       }}
     >
-      {/* Container providing dark background margin above and below the lines */}
       <div className="py-2 pb-6 md:pb-10">
         <div
           className="relative overflow-hidden py-4 md:py-6"
@@ -27,9 +26,8 @@ export default function MarqueeStrip() {
             borderBottom: "1px solid rgba(184,132,79, 0.35)",
           }}
         >
-          {/* Accent glow — subtle center warmth */}
           <div
-            className="absolute inset-0 pointer-events-none"
+            className="pointer-events-none absolute inset-0"
             style={{
               opacity: 0.04,
               background:
@@ -37,33 +35,33 @@ export default function MarqueeStrip() {
             }}
           />
 
-      <div className="flex whitespace-nowrap animate-marquee">
-        {Array.from({ length: 4 }).map((_, rep) =>
-          items.map((item, i) => (
-            <span
-              key={`${rep}-${i}`}
-              className="shrink-0 flex items-center gap-8 md:gap-12 mx-4 md:mx-6"
-            >
-              <span
-                className="text-sm md:text-base tracking-[0.25em] uppercase font-medium"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  color: "rgba(245, 240, 235, 0.35)",
-                }}
-              >
-                {item}
-              </span>
-              <span
-                className="inline-block w-1 h-1 rounded-full shrink-0"
-                style={{
-                  background: "var(--color-accent)",
-                  opacity: 0.5,
-                }}
-              />
-            </span>
-          ))
-        )}
-      </div>
+          <div className="flex animate-marquee whitespace-nowrap">
+            {Array.from({ length: 4 }).map((_, rep) =>
+              items.map((item, i) => (
+                <span
+                  key={`${rep}-${i}`}
+                  className="mx-4 flex shrink-0 items-center gap-8 md:mx-6 md:gap-12"
+                >
+                  <span
+                    className="text-sm font-medium uppercase tracking-[0.25em] md:text-base"
+                    style={{
+                      fontFamily: "var(--font-display)",
+                      color: "rgba(245, 240, 235, 0.35)",
+                    }}
+                  >
+                    {item}
+                  </span>
+                  <span
+                    className="inline-block h-1 w-1 shrink-0 rounded-full"
+                    style={{
+                      background: "var(--color-accent)",
+                      opacity: 0.5,
+                    }}
+                  />
+                </span>
+              ))
+            )}
+          </div>
         </div>
       </div>
     </section>

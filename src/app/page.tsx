@@ -1,10 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import MarqueeStrip from "@/components/MarqueeStrip";
-import PainPointsSection from "@/components/PainPointsSection";
 import FeedbackSection from "@/components/FeedbackSection";
 import PromiseSection from "@/components/PromiseSection";
 import SpeakerSection from "@/components/SpeakerSection";
-import MasterclassInfoSection from "@/components/MasterclassInfoSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import StickyUrgencyBar from "@/components/StickyUrgencyBar";
@@ -17,16 +15,9 @@ export default function Home() {
       <PixelPageEvents />
       <HeroSection />
       <MarqueeStrip />
-      <PainPointsSection />
-      <CTABanner />
-      
-      <FeedbackSection />
       <PromiseSection />
-      <CTABanner bgVar="var(--color-bg-surface)" />
-      
+      <FeedbackSection />
       <SpeakerSection />
-      <MasterclassInfoSection />
-      
       <FAQSection />
       <CTABanner />
       <Footer />

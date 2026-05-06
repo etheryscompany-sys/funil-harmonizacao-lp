@@ -33,6 +33,14 @@ const item = {
   },
 };
 
+function trackInitiateForm() {
+  try {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("trackCustom", "InitiateForm");
+    }
+  } catch {}
+}
+
 export default function PricingSection() {
   return (
     <section
@@ -64,7 +72,7 @@ export default function PricingSection() {
             className="font-mono text-xs tracking-[0.2em] uppercase block mb-6 text-center lg:text-left"
             style={{ color: "var(--color-text-muted)" }}
           >
-            // Sua sessão
+            {"// Sua sessão"}
           </span>
         </ScrollReveal>
 
@@ -190,7 +198,7 @@ export default function PricingSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary w-full justify-center"
-                  onClick={() => { try { if (typeof window !== "undefined" && (window as any).fbq) { (window as any).fbq("trackCustom", "InitiateForm"); } } catch {} }}
+                  onClick={trackInitiateForm}
                 >
                   VERIFICAR DISPONIBILIDADE
                   {ARROW_SVG}

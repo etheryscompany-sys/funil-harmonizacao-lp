@@ -42,7 +42,7 @@ export default function ContentSection() {
             className="font-mono text-xs tracking-[0.2em] uppercase block mb-6 text-center lg:text-left"
             style={{ color: "var(--color-text-muted)" }}
           >
-            // O QUE VOCÊ VAI ENTENDER
+            {"// O QUE VOCÊ VAI ENTENDER"}
           </span>
         </ScrollReveal>
 

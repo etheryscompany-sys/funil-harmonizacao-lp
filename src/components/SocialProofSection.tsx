@@ -16,7 +16,6 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated) {
           setHasAnimated(true);
-          let start = 0;
           const duration = 2000;
           const startTime = performance.now();
 
@@ -77,7 +76,7 @@ export default function SocialProofSection() {
             className="font-mono text-xs tracking-[0.2em] uppercase block mb-6 text-center lg:text-left"
             style={{ color: "var(--color-text-muted)" }}
           >
-            // Números
+            {"// Números"}
           </span>
         </ScrollReveal>
 

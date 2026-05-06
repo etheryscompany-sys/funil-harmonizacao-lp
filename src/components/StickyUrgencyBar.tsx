@@ -3,6 +3,14 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+function trackInitiateForm() {
+  try {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("trackCustom", "InitiateForm");
+    }
+  } catch {}
+}
+
 export default function StickyUrgencyBar() {
   const [visible, setVisible] = useState(false);
 
@@ -48,17 +56,17 @@ export default function StickyUrgencyBar() {
                   color: "rgba(245, 240, 235, 0.5)",
                 }}
               >
-                Vagas limitadas por semana
+                Apenas 10 vagas por semana
               </p>
 
               <a
                 href="https://kathyelejoana.pro.typeform.com/to/p5KmnaIC/"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => { try { if (typeof window !== "undefined" && (window as any).fbq) { (window as any).fbq("trackCustom", "InitiateForm"); } } catch {} }}
+                onClick={trackInitiateForm}
                 className="shrink-0 rounded-lg px-4 sm:px-5 py-2 text-[0.625rem] sm:text-xs font-semibold tracking-[0.15em] uppercase transition-all duration-500"
                 style={{
-                  fontFamily: "var(--font-mono)",
+                  fontFamily: "var(--font-body)",
                   background: "linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark, #8B6B3D) 100%)",
                   color: "#fff",
                   boxShadow: "0 2px 8px rgba(184, 132, 79, 0.25), inset 0 1px 0 rgba(255,255,255,0.12)",
@@ -73,7 +81,7 @@ export default function StickyUrgencyBar() {
                   e.currentTarget.style.boxShadow = "0 2px 8px rgba(184, 132, 79, 0.25), inset 0 1px 0 rgba(255,255,255,0.12)";
                 }}
               >
-                QUERO MINHA VAGA
+                APLICAR
               </a>
             </div>
           </div>

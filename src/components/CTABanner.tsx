@@ -6,6 +6,14 @@ interface CTABannerProps {
   bgVar?: string;
 }
 
+function trackInitiateForm() {
+  try {
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("trackCustom", "InitiateForm");
+    }
+  } catch {}
+}
+
 export default function CTABanner({ bgVar }: CTABannerProps) {
   return (
     <section
@@ -23,9 +31,9 @@ export default function CTABanner({ bgVar }: CTABannerProps) {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary inline-flex"
-            onClick={() => { try { if (typeof window !== "undefined" && (window as any).fbq) { (window as any).fbq("trackCustom", "InitiateForm"); } } catch {} }}
+            onClick={trackInitiateForm}
           >
-            QUERO MINHA VAGA
+            QUERO APLICAR PARA UMA VAGA
             <svg
               width="16"
               height="16"

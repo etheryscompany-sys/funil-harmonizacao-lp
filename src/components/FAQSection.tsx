@@ -1,35 +1,39 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Minus } from "@phosphor-icons/react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Minus, Plus } from "@phosphor-icons/react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const faqs = [
   {
-    question: "A sessão é realmente gratuita?",
+    question: "A sessão é mesmo gratuita?",
     answer:
-      "Sim, 100% gratuita e sem compromisso. É uma sessão individual comigo onde eu analiso o cenário da sua clínica e te mostro o que precisa mudar.",
+      "É, e não tem pegadinha. A sessão é o filtro pra novas mentoradas, e você sai com clareza mesmo que não feche nada comigo.",
   },
   {
-    question: "Funciona para quem está começando?",
+    question: "Funciona pra quem está começando?",
     answer:
-      "Sim. A anamnese é personalizada para o seu momento. Seja você iniciante estruturando a clínica ou experiente querendo escalar, o diagnóstico se adapta ao seu caso.",
+      "Funciona pra quem já atende, mesmo em estágio inicial. Se você ainda não atende ninguém, me chama no Instagram que oriento por outro caminho.",
   },
   {
-    question: "É consultoria ou vão tentar me vender algo?",
+    question: "Não tenho muita verba pra tráfego, faz sentido?",
     answer:
-      "É uma sessão de diagnóstico real. Você sai com clareza do que precisa mudar, independente de qualquer coisa. Se fizer sentido para os dois lados, posso te mostrar como posso ajudar mais.",
+      "Faz, porque o que vamos discutir é sobre o que sua estrutura atual já comunica, não sobre quanto você gasta em anúncio.",
   },
   {
-    question: "Para quem é a Anamnese Estratégica?",
-    answer:
-      "Para biomédicas, médicas, enfermeiras, fisioterapeutas, dentistas e profissionais de harmonização orofacial que atendem bem mas não conseguem atrair a paciente certa ou fechar protocolo completo.",
+    question: "Quanto tempo dura?",
+    answer: "De 45 minutos a 1 hora, por chamada de vídeo, individual.",
   },
   {
-    question: "Como funciona depois que eu preencho?",
+    question: "Vão tentar me empurrar uma mentoria?",
     answer:
-      "Depois de preencher o formulário, minha equipe entra em contato para agendar a sessão no melhor horário para você. As vagas são limitadas por semana.",
+      "Não, o Ápice só entra na conversa se fizer sentido pro seu caso, e fica explícito no final.",
+  },
+  {
+    question: "O que acontece depois da aplicação?",
+    answer:
+      "Você responde 6 perguntas, eu analiso pessoalmente, e se houver fit te chamo no WhatsApp pra agendar.",
   },
 ];
 
@@ -52,13 +56,13 @@ export default function FAQSection() {
       <div className="mx-auto max-w-3xl px-6">
         <ScrollReveal>
           <p
-            className="mb-4 text-xs tracking-[0.3em] uppercase"
+            className="mb-4 text-xs uppercase tracking-[0.3em]"
             style={{
               fontFamily: "var(--font-mono)",
               color: "var(--color-text-muted)",
             }}
           >
-            // DÚVIDAS
+            {"// DÚVIDAS"}
           </p>
         </ScrollReveal>
 
@@ -70,39 +74,25 @@ export default function FAQSection() {
               color: "var(--color-text-primary)",
             }}
           >
-            Perguntas Frequentes
+            Dúvidas frequentes
           </h2>
         </ScrollReveal>
 
         <div className="flex flex-col">
           {faqs.map((faq, index) => (
-            <ScrollReveal key={index} delay={150 + index * 80}>
-              <div
-                style={{
-                  borderBottom: "1px solid var(--color-border-subtle)",
-                }}
-              >
+            <ScrollReveal key={faq.question} delay={150 + index * 80}>
+              <div style={{ borderBottom: "1px solid var(--color-border-subtle)" }}>
                 <button
                   onClick={() => toggle(index)}
                   className="flex w-full cursor-pointer items-center justify-between gap-4 py-5 text-left transition-colors duration-200"
                   aria-expanded={openIndex === index}
                 >
-                  <span
-                    className="text-base font-medium sm:text-lg"
-                    style={{ color: "var(--color-text-primary)" }}
-                  >
+                  <span className="text-base font-medium sm:text-lg" style={{ color: "var(--color-text-primary)" }}>
                     {faq.question}
                   </span>
 
-                  <span
-                    className="flex shrink-0 items-center justify-center"
-                    style={{ color: "var(--color-accent)" }}
-                  >
-                    {openIndex === index ? (
-                      <Minus size={20} weight="bold" />
-                    ) : (
-                      <Plus size={20} weight="bold" />
-                    )}
+                  <span className="flex shrink-0 items-center justify-center" style={{ color: "var(--color-accent)" }}>
+                    {openIndex === index ? <Minus size={20} weight="bold" /> : <Plus size={20} weight="bold" />}
                   </span>
                 </button>
 
@@ -119,10 +109,7 @@ export default function FAQSection() {
                       }}
                       className="overflow-hidden"
                     >
-                      <p
-                        className="pb-5 text-sm leading-relaxed sm:text-base"
-                        style={{ color: "var(--color-text-secondary)" }}
-                      >
+                      <p className="pb-5 text-sm leading-relaxed sm:text-base" style={{ color: "var(--color-text-secondary)" }}>
                         {faq.answer}
                       </p>
                     </motion.div>
