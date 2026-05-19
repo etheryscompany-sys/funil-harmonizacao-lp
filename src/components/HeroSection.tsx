@@ -75,7 +75,7 @@ export default function HeroSection() {
             src="/kathyele-hero-v2.webp"
             alt="Kathyele Joana"
             fill
-            className="object-cover object-[center_15%]"
+            className="object-cover object-[center_20%]"
             sizes="(max-width: 1024px) 100vw, 0px"
             priority
             loading="eager"
